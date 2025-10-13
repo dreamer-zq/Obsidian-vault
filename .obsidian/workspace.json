@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Notes/区块链/二层网络/zkstack/01_总体架构.md",
+                "file": "Home.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_总体架构"
+              "title": "Home"
             }
           }
         ]
@@ -82,7 +82,7 @@
             }
           },
           {
-            "id": "d9a67b4acec3cff8",
+            "id": "56883cb21f2a4517",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -115,7 +115,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "标签"
@@ -142,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "C. Work/cosmos-accounts.md",
+                "file": "01-Notes/区块链/二层网络/zkstack/01_总体架构.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +154,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "cosmos-accounts 的反向链接列表"
+              "title": "01_总体架构 的反向链接列表"
             }
           },
           {
@@ -161,12 +163,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "C. Work/cosmos-accounts.md",
+                "file": "01-Notes/区块链/二层网络/zkstack/01_总体架构.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "cosmos-accounts 的出链列表"
+              "title": "01_总体架构 的出链列表"
             }
           },
           {
@@ -194,17 +196,16 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 309.5
+    "width": 309.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "bases:创建新数据库": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "quickadd:QuickAdd": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -213,22 +214,26 @@
       "command-palette:打开命令面板": false,
       "zk-prefixer:创建时间戳笔记": false,
       "random-note:开始漫游笔记": false,
+      "workspaces:管理工作区布局": false,
       "omnisearch:Omnisearch": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "quickadd:QuickAdd": false,
       "meld-encrypt:New encrypted note": false,
       "meld-encrypt:Convert to or from an Encrypted note": false,
       "meld-encrypt:Encrypt/Decrypt": false,
       "templater-obsidian:Templater": false,
       "homepage:Open homepage": false,
-      "workspaces:管理工作区布局": false,
-      "file-tree-alternative:File Tree Alternative Plugin": false
+      "file-tree-alternative:File Tree Alternative Plugin": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Home.md.md",
-    "02-Projects/cosmos-accounts.md",
+    "Home.md",
     "01-Notes/区块链/二层网络/zkstack/01_总体架构.md",
     "00-Inbox/临时笔记.md",
+    "01-Notes/区块链/二层网络/zkstack/02_核心模块分析.md",
+    "02-Projects/cosmos-accounts.md",
     "未命名.base",
     "202510131725.md",
     "未命名 1.base",
@@ -236,9 +241,7 @@
     "未命名.canvas",
     "Excalidraw/Drawing 2025-10-13 17.24.53.excalidraw.md",
     "Excalidraw",
-    "01-Notes/区块链/二层网络/zkstack/02_核心模块分析.md",
     "Excalidraw/Drawing 2025-10-13 17.22.40.excalidraw.md",
-    "Home.md",
     "02-Projects/L2 验证网络分析与设计.md",
     "00-Inbox.md",
     "02-Projects.md",
