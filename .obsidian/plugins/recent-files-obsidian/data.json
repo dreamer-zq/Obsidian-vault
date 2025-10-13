@@ -1,0 +1,95 @@
+{
+  "recentFiles": [
+    {
+      "basename": "cosmos-accounts",
+      "path": "02-Projects/cosmos-accounts.md"
+    },
+    {
+      "basename": "Home.md",
+      "path": "Home.md.md"
+    },
+    {
+      "basename": "01_总体架构",
+      "path": "01-Notes/区块链/二层网络/zkstack/01_总体架构.md"
+    },
+    {
+      "basename": "临时笔记",
+      "path": "00-Inbox/临时笔记.md"
+    },
+    {
+      "basename": "Drawing 2025-10-13 17.24.53.excalidraw",
+      "path": "Excalidraw/Drawing 2025-10-13 17.24.53.excalidraw.md"
+    },
+    {
+      "basename": "02_核心模块分析",
+      "path": "01-Notes/区块链/二层网络/zkstack/02_核心模块分析.md"
+    },
+    {
+      "basename": "L2 验证网络分析与设计",
+      "path": "02-Projects/L2 验证网络分析与设计.md"
+    },
+    {
+      "basename": "链下扩容深度总结",
+      "path": "01-Notes/区块链/二层网络/链下扩容深度总结.md"
+    },
+    {
+      "basename": "03_核心组件",
+      "path": "01-Notes/区块链/二层网络/zkstack/03_核心组件.md"
+    },
+    {
+      "basename": "跨链桥",
+      "path": "01-Notes/区块链/跨链/跨链桥.md"
+    },
+    {
+      "basename": "软件",
+      "path": "03-Resources/软件.mdenc"
+    },
+    {
+      "basename": "HVN方案",
+      "path": "02-Projects/HVN方案.md"
+    },
+    {
+      "basename": "Optimistic概述",
+      "path": "01-Notes/区块链/二层网络/Optimistic概述.md"
+    },
+    {
+      "basename": "心智模型",
+      "path": "01-Notes/区块链/二层网络/心智模型.md"
+    },
+    {
+      "basename": "拒绝服务",
+      "path": "01-Notes/区块链/智能合约/漏洞分析/拒绝服务.md"
+    },
+    {
+      "basename": "HVN架构设计",
+      "path": "02-Projects/HVN架构设计.md"
+    },
+    {
+      "basename": "nesa-Tokenomics - Deposit",
+      "path": "02-Projects/nesa-Tokenomics - Deposit.md"
+    },
+    {
+      "basename": "op区块回滚方案",
+      "path": "02-Projects/op区块回滚方案.md"
+    },
+    {
+      "basename": "nesa-Tokenomics - Payment distributed",
+      "path": "02-Projects/nesa-Tokenomics - Payment distributed.md"
+    },
+    {
+      "basename": "delegatecall",
+      "path": "01-Notes/区块链/智能合约/漏洞分析/delegatecall.md"
+    },
+    {
+      "basename": "重入漏洞",
+      "path": "01-Notes/区块链/智能合约/漏洞分析/重入漏洞.md"
+    },
+    {
+      "basename": "使用 tx.origin 进行网络钓鱼",
+      "path": "01-Notes/区块链/智能合约/漏洞分析/使用 tx.origin 进行网络钓鱼.md"
+    }
+  ],
+  "omittedPaths": [],
+  "maxLength": null,
+  "openType": "tab"
+}
