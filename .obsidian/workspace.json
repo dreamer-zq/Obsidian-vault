@@ -84,7 +84,8 @@
               "title": "搜索"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -200,7 +201,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 309.5
+    "width": 309.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,10 +227,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "56883cb21f2a4517",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "未命名.md",
     "Home.md",
+    "未命名.base",
+    "未命名.md",
     "02-Projects/nesa",
     "02-Projects/cosmos",
     "02-Projects/hashkey",
@@ -236,7 +239,6 @@
     "00-Inbox/临时笔记.md",
     "01-Notes/区块链/二层网络/zkstack/02_核心模块分析.md",
     "02-Projects/cosmos/cosmos-accounts.md",
-    "未命名.base",
     "202510131725.md",
     "未命名 1.base",
     "202510131726.md",
