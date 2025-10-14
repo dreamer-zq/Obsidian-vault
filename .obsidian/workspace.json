@@ -35,13 +35,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a608465d45b4e4a7",
+            "id": "56883cb21f2a4517",
             "type": "leaf",
             "state": {
-              "type": "file-tree-view",
-              "state": {},
-              "icon": "sheets-in-box",
-              "title": "File Tree"
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -79,19 +82,6 @@
               },
               "icon": "lucide-search",
               "title": "搜索"
-            }
-          },
-          {
-            "id": "56883cb21f2a4517",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "文件列表"
             }
           }
         ]
@@ -194,14 +184,23 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "1ef0eef8b44389f6",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 309.5,
-    "collapsed": true
+    "width": 309.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -223,17 +222,20 @@
       "meld-encrypt:Encrypt/Decrypt": false,
       "templater-obsidian:Templater": false,
       "homepage:Open homepage": false,
-      "file-tree-alternative:File Tree Alternative Plugin": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "56883cb21f2a4517",
   "lastOpenFiles": [
+    "未命名.md",
     "Home.md",
+    "02-Projects/nesa",
+    "02-Projects/cosmos",
+    "02-Projects/hashkey",
     "01-Notes/区块链/二层网络/zkstack/01_总体架构.md",
     "00-Inbox/临时笔记.md",
     "01-Notes/区块链/二层网络/zkstack/02_核心模块分析.md",
-    "02-Projects/cosmos-accounts.md",
+    "02-Projects/cosmos/cosmos-accounts.md",
     "未命名.base",
     "202510131725.md",
     "未命名 1.base",
@@ -242,7 +244,7 @@
     "Excalidraw/Drawing 2025-10-13 17.24.53.excalidraw.md",
     "Excalidraw",
     "Excalidraw/Drawing 2025-10-13 17.22.40.excalidraw.md",
-    "02-Projects/L2 验证网络分析与设计.md",
+    "02-Projects/hashkey/L2 验证网络分析与设计.md",
     "00-Inbox.md",
     "02-Projects.md",
     "01-Notes/区块链/二层网络/链下扩容深度总结.md",
@@ -251,18 +253,15 @@
     "Templates",
     "03-Resources",
     "02-Projects",
-    "01-Notes",
-    "00-Inbox",
     "01-Notes/区块链/二层网络/zkstack/04_Prividium.md",
     "01-Notes/区块链/二层网络/zkstack/05_Prividium私有链搭建.md",
-    "01-Notes/区块链/二层网络/zkstack",
     "01-Notes/区块链/跨链/跨链桥.md",
-    "02-Projects/HVN方案.md",
+    "02-Projects/hashkey/HVN方案.md",
     "01-Notes/区块链/二层网络/Optimistic概述.md",
     "01-Notes/区块链/二层网络/心智模型.md",
     "01-Notes/区块链/智能合约/漏洞分析/拒绝服务.md",
-    "02-Projects/HVN架构设计.md",
-    "02-Projects/nesa-Tokenomics - Deposit.md",
-    "02-Projects/op区块回滚方案.md"
+    "02-Projects/hashkey/HVN架构设计.md",
+    "02-Projects/nesa/nesa-Tokenomics - Deposit.md",
+    "02-Projects/hashkey/op区块回滚方案.md"
   ]
 }

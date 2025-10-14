@@ -23,5 +23,5 @@
   "translucency": true,
   "textFontFamily": "LXGW WenKai",
   "nativeMenus": true,
-  "showRibbon": false
+  "showRibbon": true
 }
