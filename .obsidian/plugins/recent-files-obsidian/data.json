@@ -5,6 +5,10 @@
       "path": "Home.md"
     },
     {
+      "basename": "03_核心组件",
+      "path": "01-Notes/区块链/二层网络/zkstack/03_核心组件.md"
+    },
+    {
       "basename": "01_总体架构",
       "path": "01-Notes/区块链/二层网络/zkstack/01_总体架构.md"
     },
@@ -27,10 +31,6 @@
     {
       "basename": "链下扩容深度总结",
       "path": "01-Notes/区块链/二层网络/链下扩容深度总结.md"
-    },
-    {
-      "basename": "03_核心组件",
-      "path": "01-Notes/区块链/二层网络/zkstack/03_核心组件.md"
     },
     {
       "basename": "跨链桥",
