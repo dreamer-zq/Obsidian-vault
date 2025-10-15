@@ -84,8 +84,7 @@
               "title": "搜索"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -201,8 +200,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 309.5,
-    "collapsed": true
+    "width": 309.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,7 +209,7 @@
       "switcher:打开快速切换": true,
       "graph:查看关系图谱": false,
       "canvas:新建白板": true,
-      "daily-notes:打开/创建今天的日记": false,
+      "daily-notes:打开/创建今天的日记": true,
       "templates:插入模板": true,
       "command-palette:打开命令面板": false,
       "zk-prefixer:创建时间戳笔记": true,
@@ -224,14 +222,21 @@
       "meld-encrypt:Convert to or from an Encrypted note": true,
       "meld-encrypt:Encrypt/Decrypt": true,
       "templater-obsidian:Templater": true,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "meld-encrypt:Lock and Close all open encrypted notes": true,
+      "meld-encrypt:Encrypt Selection": true,
+      "meld-encrypt:Decrypt at Cursor": true
     }
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "01-Notes/区块链/二层网络/链下扩容深度总结.md",
     "Home.md",
-    "01-Notes/区块链/二层网络/zkstack/03_核心组件.md",
+    "01-Notes/区块链/跨链/跨链桥.md",
+    "03-Resources/软件.mdenc",
+    "01-Notes/区块链/二层网络/zkstack/05_Prividium私有链搭建.md",
     "01-Notes/区块链/二层网络/zkstack/01_总体架构.md",
+    "01-Notes/区块链/二层网络/zkstack/03_核心组件.md",
     "01-Notes/区块链/二层网络/zkstack/02_核心模块分析.md",
     "未命名.base",
     "未命名.md",
@@ -250,14 +255,10 @@
     "02-Projects/hashkey/L2 验证网络分析与设计.md",
     "00-Inbox.md",
     "02-Projects.md",
-    "01-Notes/区块链/二层网络/链下扩容深度总结.md",
     "未命名",
     "Templates",
     "03-Resources",
-    "02-Projects",
     "01-Notes/区块链/二层网络/zkstack/04_Prividium.md",
-    "01-Notes/区块链/二层网络/zkstack/05_Prividium私有链搭建.md",
-    "01-Notes/区块链/跨链/跨链桥.md",
     "02-Projects/hashkey/HVN方案.md",
     "01-Notes/区块链/二层网络/Optimistic概述.md",
     "01-Notes/区块链/二层网络/心智模型.md",
