@@ -220,7 +220,6 @@
       "quickadd:QuickAdd": true,
       "meld-encrypt:New encrypted note": true,
       "meld-encrypt:Convert to or from an Encrypted note": true,
-      "meld-encrypt:Encrypt/Decrypt": true,
       "templater-obsidian:Templater": true,
       "obsidian-git:Open Git source control": false,
       "meld-encrypt:Lock and Close all open encrypted notes": true,
@@ -230,8 +229,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "01-Notes/区块链/二层网络/链下扩容深度总结.md",
     "Home.md",
+    "01-Notes/区块链/二层网络/链下扩容深度总结.md",
     "01-Notes/区块链/跨链/跨链桥.md",
     "03-Resources/软件.mdenc",
     "01-Notes/区块链/二层网络/zkstack/05_Prividium私有链搭建.md",
