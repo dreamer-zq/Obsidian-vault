@@ -23,6 +23,7 @@ dv.table(["分类", "数量"],
            .sort((a, b) => b[1] - a[1])
 )
 ```
+
 ---
 
 ## 📥 收集箱 (待整理)
@@ -37,6 +38,7 @@ WHERE file.name != "收集箱说明"
 SORT file.ctime DESC
 LIMIT 8
 ```
+
 ---
 
 ## 🔥 最近更新
@@ -112,4 +114,5 @@ GROUP BY tag
 SORT length(rows) DESC
 LIMIT 12
 ```
+
 ---
