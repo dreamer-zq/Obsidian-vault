@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "02_consensus",
+      "path": "01-Notes/blockchain/solana/02_consensus.md"
+    },
+    {
+      "basename": "03_block_construction",
+      "path": "01-Notes/blockchain/solana/03_block_construction.md"
+    },
+    {
       "basename": "Home",
       "path": "Home.md"
     },
