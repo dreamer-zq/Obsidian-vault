@@ -200,7 +200,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 309.5
+    "width": 309.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -229,8 +230,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "01-Notes/blockchain/solana/01_index.md",
     "Home.md",
+    "01-Notes/blockchain/solana/01_index.md",
     "01-Notes/区块链/二层网络/链下扩容深度总结.md",
     "01-Notes/区块链/跨链/跨链桥.md",
     "03-Resources/软件.mdenc",
