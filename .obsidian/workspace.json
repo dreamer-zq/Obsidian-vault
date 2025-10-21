@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#rollup",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -200,8 +200,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 309.5,
-    "collapsed": true
+    "width": 309.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,12 +229,12 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Home.md",
+    "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
     "01-Notes/blockchain/L2/zkstack/06_Prividium私有链搭建.md",
     "01-Notes/blockchain/L2/zkstack/05_Prividium.md",
     "01-Notes/blockchain/L2/zkstack/04_区块和交易.md",
-    "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
     "01-Notes/blockchain/L2/zkstack/03_核心组件.md",
-    "Home.md",
     "01-Notes/blockchain/solana/02_consensus.md",
     "01-Notes/blockchain/solana/03_block_construction.md",
     "01-Notes/blockchain/solana/01_index.md",
