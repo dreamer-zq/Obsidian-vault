@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Notes/blockchain/solana/02_consensus.md",
-                "mode": "source",
+                "file": "Home.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_consensus"
+              "title": "Home"
             }
           }
         ]
@@ -230,8 +230,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "01-Notes/blockchain/solana/03_block_construction.md",
     "01-Notes/blockchain/solana/02_consensus.md",
+    "01-Notes/blockchain/solana/03_block_construction.md",
     "Home.md",
     "01-Notes/blockchain/solana/01_index.md",
     "01-Notes/区块链/二层网络/链下扩容深度总结.md",
