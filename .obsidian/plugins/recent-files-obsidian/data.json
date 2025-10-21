@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Home",
+      "path": "Home.md"
+    },
+    {
       "basename": "06_Prividium私有链搭建",
       "path": "01-Notes/blockchain/L2/zkstack/06_Prividium私有链搭建.md"
     },
@@ -19,10 +23,6 @@
     {
       "basename": "03_核心组件",
       "path": "01-Notes/blockchain/L2/zkstack/03_核心组件.md"
-    },
-    {
-      "basename": "Home",
-      "path": "Home.md"
     },
     {
       "basename": "02_consensus",
