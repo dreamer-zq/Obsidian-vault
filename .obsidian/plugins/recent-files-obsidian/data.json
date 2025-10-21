@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "06_Prividium私有链搭建",
+      "path": "01-Notes/blockchain/L2/zkstack/06_Prividium私有链搭建.md"
+    },
+    {
+      "basename": "05_Prividium",
+      "path": "01-Notes/blockchain/L2/zkstack/05_Prividium.md"
+    },
+    {
+      "basename": "04_区块和交易",
+      "path": "01-Notes/blockchain/L2/zkstack/04_区块和交易.md"
+    },
+    {
+      "basename": "01_总体架构",
+      "path": "01-Notes/blockchain/L2/zkstack/01_总体架构.md"
+    },
+    {
+      "basename": "03_核心组件",
+      "path": "01-Notes/blockchain/L2/zkstack/03_核心组件.md"
+    },
+    {
       "basename": "Home",
       "path": "Home.md"
     },

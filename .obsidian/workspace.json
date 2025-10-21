@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "01-Notes/blockchain/L2/zkstack/06_Prividium私有链搭建.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "06_Prividium私有链搭建"
             }
           }
         ]
@@ -230,9 +230,13 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "01-Notes/blockchain/L2/zkstack/05_Prividium.md",
+    "01-Notes/blockchain/L2/zkstack/04_区块和交易.md",
+    "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
+    "01-Notes/blockchain/L2/zkstack/03_核心组件.md",
+    "Home.md",
     "01-Notes/blockchain/solana/02_consensus.md",
     "01-Notes/blockchain/solana/03_block_construction.md",
-    "Home.md",
     "01-Notes/blockchain/solana/01_index.md",
     "01-Notes/区块链/二层网络/链下扩容深度总结.md",
     "01-Notes/区块链/跨链/跨链桥.md",
@@ -262,10 +266,6 @@
     "Templates",
     "03-Resources",
     "01-Notes/区块链/二层网络/zkstack/04_Prividium.md",
-    "02-Projects/hashkey/HVN方案.md",
-    "01-Notes/区块链/二层网络/Optimistic概述.md",
-    "01-Notes/区块链/二层网络/心智模型.md",
-    "01-Notes/区块链/智能合约/漏洞分析/拒绝服务.md",
-    "02-Projects/hashkey/HVN架构设计.md"
+    "02-Projects/hashkey/HVN方案.md"
   ]
 }
