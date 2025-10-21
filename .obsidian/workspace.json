@@ -230,7 +230,10 @@
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "Home.md",
+    "Templates/学习任务模板.md",
     "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
+    "02-Projects/hashkey/L2 验证网络分析与设计.md",
+    "02-Projects/hashkey/HVN方案.md",
     "01-Notes/blockchain/L2/zkstack/06_Prividium私有链搭建.md",
     "01-Notes/blockchain/L2/zkstack/05_Prividium.md",
     "01-Notes/blockchain/L2/zkstack/04_区块和交易.md",
@@ -259,12 +262,9 @@
     "Excalidraw/Drawing 2025-10-13 17.24.53.excalidraw.md",
     "Excalidraw",
     "Excalidraw/Drawing 2025-10-13 17.22.40.excalidraw.md",
-    "02-Projects/hashkey/L2 验证网络分析与设计.md",
     "00-Inbox.md",
-    "02-Projects.md",
     "未命名",
     "Templates",
-    "03-Resources",
-    "01-Notes/区块链/二层网络/zkstack/04_Prividium.md"
+    "03-Resources"
   ]
 }

@@ -1,7 +1,3 @@
----
-status: "已完成"
-progress: "100%"
----
 
 # HVN（HSK Validation Network）方案汇报
 

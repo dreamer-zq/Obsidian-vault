@@ -1,3 +1,7 @@
+---
+study_status: "学习中"
+---
+
 # Solana 架构手册
 
 ## 目录
@@ -159,6 +163,17 @@ Solana 的运行时称 Sealevel（或未来的 SVM），支持多交易并行执
 - Solana Executive Overview 报告  [oai_citation:5‡Helius](https://www.helius.dev/blog/solana-executive-overview?utm_source=chatgpt.com)  
 - SVM / 并行执行相关文章  [oai_citation:6‡squads.so](https://squads.so/blog/solana-svm-sealevel-virtual-machine?utm_source=chatgpt.com)  
 - Solana 文档官网  [oai_citation:7‡solana.com](https://solana.com/docs?utm_source=chatgpt.com)  
-- 其他社区深度技术文章  [oai_citation:8‡Medium](https://medium.com/%40tobs.x/a-dive-into-solanas-technical-architecture-190938484b68?utm_source=chatgpt.com)  
+- 其他社区深度技术文章  [oai_citation:8‡Medium](https://medium.com/%40tobs.x/a-dive-into-solanas-technical-architecture-190938484b68?utm_source=chatgpt.com)
+
+---
+
+## 📚 学习任务
+
+- [ ] 深入理解 Proof of History (PoH) 机制
+- [ ] 研究 Tower BFT 共识算法实现
+- [ ] 分析 Sealevel 并行执行引擎
+- [ ] 学习 PDA (Program Derived Address) 机制
+- [x] 完成 Solana 架构概览
+- [ ] 实践编写简单的 Solana 程序  
 
 ---

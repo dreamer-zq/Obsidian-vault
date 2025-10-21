@@ -26,7 +26,7 @@ dv.table(["分类", "数量"],
 
 ---
 
-## 📥 收集箱 (待整理)
+## 📥 收集箱
 
 ```dataview
 TABLE WITHOUT ID
@@ -41,45 +41,20 @@ LIMIT 8
 
 ---
 
-## 🔥 最近更新
+## 📌 学习任务
 
 ```dataview
 TABLE WITHOUT ID
-  file.link as "文件",
-  dateformat(file.mtime, "yyyy-MM-dd HH:mm") as "修改时间",
-  file.folder as "位置"
-FROM "" AND -"Templates"
-WHERE file.name != "首页" AND file.name != "Dashboard" AND file.name != "Home"
+  file.link as "笔记",
+  study_status as "学习状态",
+  dateformat(file.mtime, "MM-dd") as "更新"
+FROM "01-Notes"
+WHERE study_status
 SORT file.mtime DESC
 LIMIT 10
 ```
 
----
-
-## ✨ 最近创建
-
-```dataview
-TABLE WITHOUT ID
-  file.link as "文件",
-  dateformat(file.ctime, "yyyy-MM-dd") as "创建日期",
-  file.folder as "分类"
-FROM "" AND -"Templates"
-WHERE file.name != "首页" AND file.name != "Dashboard" AND file.name != "Home"
-SORT file.ctime DESC
-LIMIT 8
-```
-
----
-
-## 📌 待办任务
-
-```dataview
-TASK
-WHERE !completed AND file.folder != "Templates"
-GROUP BY file.link
-SORT file.mtime DESC
-LIMIT 15
-```
+> [!info] 💡 提示 在笔记文件的 YAML 中添加 `study_status` 字段来跟踪学习进度
 
 ---
 
@@ -101,6 +76,20 @@ LIMIT 5
 
 ---
 
+---
+
+## 🔥 最近更新
+
+```dataview
+TABLE WITHOUT ID
+  file.link as "文件",
+  dateformat(file.mtime, "yyyy-MM-dd HH:mm") as "修改时间"
+FROM "" AND -"Templates"
+WHERE file.name != "首页" AND file.name != "Dashboard" AND file.name != "Home"
+SORT file.mtime DESC
+LIMIT 10
+```
+
 ## 🏷️ 热门标签
 
 ```dataview
@@ -108,8 +97,8 @@ TABLE WITHOUT ID
   rows.file.etags[0] as "标签",
   length(rows) as "使用次数"
 FROM "" AND -"Templates"
-FLATTEN file.etags as tag
-WHERE file.etags
+WHERE file.tags
+FLATTEN file.tags as tag
 GROUP BY tag
 SORT length(rows) DESC
 LIMIT 12
