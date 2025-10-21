@@ -43,15 +43,20 @@ LIMIT 8
 
 ## 📌 学习任务
 
-```dataview
-TABLE WITHOUT ID
-  file.link as "笔记",
-  study_status as "学习状态",
-  dateformat(file.mtime, "MM-dd") as "更新"
-FROM "01-Notes"
-WHERE study_status
-SORT file.mtime DESC
-LIMIT 10
+```dataviewjs
+const pages = dv.pages('"01-Notes"').where(p => p.study_status)
+const tableData = pages.map(p => {
+    const pathParts = p.file.path.split('/')
+    const module = pathParts[pathParts.length - 2] || "根目录"
+    return [
+        p.file.link,
+        module,
+        p.study_status,
+        dv.date(p.file.mtime).toFormat("MM-dd")
+    ]
+}).sort((a, b) => dv.date(b[3]) - dv.date(a[3])).slice(0, 10)
+
+dv.table(["笔记", "模块", "学习状态", "更新"], tableData)
 ```
 
 > [!info] 💡 提示 在笔记文件的 YAML 中添加 `study_status` 字段来跟踪学习进度
@@ -73,8 +78,6 @@ LIMIT 5
 ```
 
 > [!tip] 💡 提示 在项目文件的 YAML 中添加 `status` 和 `progress` 字段可以在这里显示
-
----
 
 ---
 
