@@ -11,16 +11,6 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
-            }
-          },
-          {
-            "id": "9adcc0767ca4ce57",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
                 "file": "Home.md",
@@ -31,8 +21,7 @@
               "title": "Home"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -240,11 +229,11 @@
       "meld-encrypt:Decrypt at Cursor": true
     }
   },
-  "active": "9adcc0767ca4ce57",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Home.md",
     "01-Notes/blockchain/L2/zkstack/05_Prividium.md",
     "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
-    "Home.md",
     "01-Notes/blockchain/solana/02_共识(PoH+Tower BFT).md",
     "01-Notes/blockchain/solana/01_总览.md",
     "Templates/学习任务模板.md",
