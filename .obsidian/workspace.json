@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
+                "file": "Home.md",
                 "mode": "preview",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "01_总体架构"
+              "title": "Home"
             }
           }
         ]
@@ -230,9 +230,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
     "Home.md",
     "01-Notes/blockchain/L2/zkstack/zksync os.md",
-    "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
     "01-Notes/blockchain/L2/zkstack/05_Prividium.md",
     "01-Notes/blockchain/solana/02_共识(PoH+Tower BFT).md",
     "01-Notes/blockchain/solana/01_总览.md",
