@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "01_总体架构",
+      "path": "01-Notes/blockchain/L2/zkstack/01_总体架构.md"
+    },
+    {
       "basename": "Home",
       "path": "Home.md"
     },
     {
-      "basename": "05_Prividium",
-      "path": "01-Notes/blockchain/L2/zkstack/05_Prividium.md"
+      "basename": "zksync os",
+      "path": "01-Notes/blockchain/L2/zkstack/zksync os.md"
     },
     {
-      "basename": "01_总体架构",
-      "path": "01-Notes/blockchain/L2/zkstack/01_总体架构.md"
+      "basename": "05_Prividium",
+      "path": "01-Notes/blockchain/L2/zkstack/05_Prividium.md"
     },
     {
       "basename": "02_共识(PoH+Tower BFT)",

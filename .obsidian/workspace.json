@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
                 "mode": "preview",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "01_总体架构"
             }
           }
         ]
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 293.5,
-    "collapsed": true
+    "width": 293.5
   },
   "right": {
     "id": "25980be1482195b4",
@@ -232,8 +231,9 @@
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "Home.md",
-    "01-Notes/blockchain/L2/zkstack/05_Prividium.md",
+    "01-Notes/blockchain/L2/zkstack/zksync os.md",
     "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
+    "01-Notes/blockchain/L2/zkstack/05_Prividium.md",
     "01-Notes/blockchain/solana/02_共识(PoH+Tower BFT).md",
     "01-Notes/blockchain/solana/01_总览.md",
     "Templates/学习任务模板.md",
@@ -264,7 +264,6 @@
     "Excalidraw/Drawing 2025-10-13 17.24.53.excalidraw.md",
     "Excalidraw",
     "Excalidraw/Drawing 2025-10-13 17.22.40.excalidraw.md",
-    "00-Inbox.md",
     "未命名",
     "Templates",
     "03-Resources"
