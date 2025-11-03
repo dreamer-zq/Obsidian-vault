@@ -9,6 +9,14 @@
       "path": "01-Notes/blockchain/L2/zkstack/01_总体架构.md"
     },
     {
+      "basename": "Agglayer",
+      "path": "01-Notes/blockchain/L2/polygon/Agglayer.md"
+    },
+    {
+      "basename": "Optimistic概述",
+      "path": "01-Notes/blockchain/L2/optimistic/Optimistic概述.md"
+    },
+    {
       "basename": "zksync os",
       "path": "01-Notes/blockchain/L2/zkstack/zksync os.md"
     },

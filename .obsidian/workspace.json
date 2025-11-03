@@ -230,8 +230,13 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Home.md",
     "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
+    "Home.md",
+    "01-Notes/blockchain/L2/polygon/Agglayer.md",
+    "assets/images/Pasted image 20251103140535.png",
+    "01-Notes/blockchain/L2/optimistic/Optimistic概述.md",
+    "assets/images",
+    "assets",
     "01-Notes/blockchain/L2/zkstack/zksync os.md",
     "01-Notes/blockchain/L2/zkstack/05_Prividium.md",
     "01-Notes/blockchain/solana/02_共识(PoH+Tower BFT).md",
@@ -259,13 +264,8 @@
     "02-Projects/cosmos/cosmos-accounts.md",
     "202510131725.md",
     "未命名 1.base",
-    "202510131726.md",
     "未命名.canvas",
-    "Excalidraw/Drawing 2025-10-13 17.24.53.excalidraw.md",
     "Excalidraw",
-    "Excalidraw/Drawing 2025-10-13 17.22.40.excalidraw.md",
-    "未命名",
-    "Templates",
-    "03-Resources"
+    "Templates"
   ]
 }
