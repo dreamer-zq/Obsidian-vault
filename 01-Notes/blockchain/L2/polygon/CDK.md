@@ -4,7 +4,7 @@ study_status: "学习中"
 
 # Polygon CDK 架构概览
 
-> 简述：Agglayer Chain Development Kit（CDK）是一个多栈（multistack）工具包，用于快速构建以太坊兼容的 L2。每条 CDK 链原生连接 Agglayer，具备跨链互操作、共享流动性与统一状态；CDK 支持 Sovereign、Validium、zkRollup 等模式，具体可用性取决于所选执行栈。
+> 简述：“AggLayer Chain Development Kit（Polygon CDK）是一个模块化、多栈的工具包，旨在帮助快速构建以太坊兼容的 L2 链。CDK 支持多种执行栈（如 cdk-opgeth、cdk-erigon）与安全模式（Sovereign、Validium、zkRollup），并与 AggLayer 原生对接以提供统一的跨链互操作语义与共享流动性。具体的可用功能（如数据可用性方案、证明策略）取决于所选的执行栈与部署模式。”
 > 术语索引：参见 [Glossary](Glossary.md)。
 
 ## 1. 架构总览
@@ -13,7 +13,7 @@ study_status: "学习中"
   - 模块化与可定制：按场景选择执行、证明、数据可用性与结算等组件。
   - EVM 兼容：沿用以太坊工具链（钱包、RPC、SDK），降低迁移成本。
   - 安全与扩展：通过 ZK 证明继承以太坊安全，支持外部 DA 与多栈互操作。
-  - 原生`AggLayer`连接：Sovereign 模式默认启用，采用悲观证明（无需 prover），提供低成本互操作；其它模式结合 ZK 证明与不同 DA 策略。
+  - 原生`AggLayer`连接：Sovereign 模式通常不依赖 ZK prover 作为互操作安全的主要机制，而是通过与 AggLayer 的原生连接、链端提交与 AggLayer 的验证/路由机制（即文中所称的‘悲观证明’或 challenge/验证机制）来保障跨链交互的安全性。注意：sequencer/排序器仍负责打包与提交批次；当需要更强的加密保障时，可选择结合 ZK 证明或外部 DA。若要深入理解‘悲观证明’，请参见 Glossary 中关于该术语的详细说明与参考链接。
 
 - 执行栈（Stacks）：
   - cdk-opgeth：OP Stack 风格，基于 Geth，原生`AggLayer`连接，适合快速上线与以太坊原生工具链；由 Conduit 维护 G2 排序器。
@@ -152,7 +152,7 @@ sequenceDiagram
 - 安全性：以 ZK 证明保证状态转换正确性；zk-Rollup 通过数据上链提供最高安全；Validium 由 DAC 提供数据可用性保证。
 - 可定制：可选择 DA 方式（L1、外部 DA、DAC）、桥接策略与互操作方案（AggLayer）、排序器架构与 gas 代币等。
 
-## 7. 参考资料
+## 6. 参考资料
 
 - `AggLayer`Docs — What is CDK: <https://docs.agglayer.dev/cdk/get-started/overview/>
 - `AggLayer`Docs — `cdk-opgeth`Architecture: <https://docs.agglayer.dev/cdk/cdk-opgeth/architecture/>
