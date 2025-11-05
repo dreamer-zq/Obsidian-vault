@@ -26,6 +26,9 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material mkdocs-mermaid2-plugin 
+      - name: Clean local site output
+        run: |
+          python scripts/clean_site.py
       - name: Prepare docs content
         shell: bash
         run: |

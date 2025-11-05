@@ -1,7 +1,7 @@
 site_name: Dreamer's Obsidian Vault
 # site_url: https://mydomain.org/mysite
 docs_dir: .
-site_dir: .
+site_dir: ../site
 theme:
   name: material
   palette:
