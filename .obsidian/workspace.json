@@ -15,7 +15,7 @@
               "state": {
                 "file": "Home.md",
                 "mode": "preview",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
               "title": "Home"
@@ -230,8 +230,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "01-Notes/blockchain/L2/polygon/Agglayer.md",
     "Home.md",
+    "01-Notes/blockchain/L2/polygon/Agglayer.md",
     "02-Projects/hashkey/L2 验证网络分析与设计.md",
     "01-Notes/blockchain/L2/polygon/Agglayer-AggKit.md",
     "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
