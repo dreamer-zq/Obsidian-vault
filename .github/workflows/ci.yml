@@ -26,4 +26,42 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material 
+      - name: Prepare docs content
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "Preparing content for MkDocs build..."
+          mkdir -p docs
+          # Copy selected top-level directories into docs so MkDocs can serve them
+          # NOTE: 00-Index in your note likely refers to 00-Inbox in this repo
+          if [ -d 00-Inbox ]; then
+            cp -a 00-Inbox docs/00-Inbox
+          fi
+          if [ -d 01-Notes ]; then
+            cp -a 01-Notes docs/01-Notes
+          fi
+          # Optional: include other sections that are referenced from the homepage
+          if [ -d 02-Projects ]; then
+            cp -a 02-Projects docs/02-Projects
+          fi
+          if [ -d 03-Resources ]; then
+            cp -a 03-Resources docs/03-Resources
+          fi
+          if [ -d Excalidraw ]; then
+            cp -a Excalidraw docs/Excalidraw
+          fi
+          if [ -d Templates ]; then
+            cp -a Templates docs/Templates
+          fi
+          if [ -d assets ]; then
+            cp -a assets docs/assets
+          fi
+          # Copy standalone files that the homepage links to
+          if [ -f Home.md ]; then
+            cp -a Home.md docs/Home.md
+          fi
+          if [ -f mkdocs.yml ]; then
+            cp -a mkdocs.yml docs/mkdocs.yml
+          fi
+          echo "Content prepared under ./docs"
       - run: mkdocs gh-deploy --force
