@@ -2,9 +2,6 @@ site_name: Dreamer's Obsidian Vault
 # site_url: https://mydomain.org/mysite
 theme:
   name: material
-plugins:
-  - search
-  - mermaid2
 markdown_extensions:
   - admonition
   - pymdownx.details
