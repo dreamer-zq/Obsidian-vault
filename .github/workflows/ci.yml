@@ -48,4 +48,4 @@ jobs:
             cp -a assets docs/assets
           fi
           echo "Content prepared under ./docs"
-      - run: mkdocs gh-deploy --force
+      - run: mkdocs gh-deploy --force -f docs/mkdocs.yml
