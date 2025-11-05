@@ -47,8 +47,5 @@ jobs:
           if [ -d assets ]; then
             cp -a assets docs/assets
           fi
-          if [ -f mkdocs.yml ]; then
-            cp -a mkdocs.yml docs/mkdocs.yml
-          fi
           echo "Content prepared under ./docs"
       - run: mkdocs gh-deploy --force
