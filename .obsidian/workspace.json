@@ -15,7 +15,7 @@
               "state": {
                 "file": "Home.md",
                 "mode": "preview",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "Home"
@@ -230,9 +230,11 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Home.md",
-    "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
     "01-Notes/blockchain/L2/polygon/Agglayer.md",
+    "Home.md",
+    "02-Projects/hashkey/L2 验证网络分析与设计.md",
+    "01-Notes/blockchain/L2/polygon/Agglayer-AggKit.md",
+    "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
     "assets/images/Pasted image 20251103140535.png",
     "01-Notes/blockchain/L2/optimistic/Optimistic概述.md",
     "assets/images",
@@ -242,7 +244,6 @@
     "01-Notes/blockchain/solana/02_共识(PoH+Tower BFT).md",
     "01-Notes/blockchain/solana/01_总览.md",
     "Templates/学习任务模板.md",
-    "02-Projects/hashkey/L2 验证网络分析与设计.md",
     "02-Projects/hashkey/HVN方案.md",
     "01-Notes/blockchain/L2/zkstack/06_Prividium私有链搭建.md",
     "01-Notes/blockchain/L2/zkstack/04_区块和交易.md",

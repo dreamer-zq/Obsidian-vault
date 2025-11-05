@@ -1,7 +1,3 @@
----
-study_status: "学习中"
----
-
 # Polygon CDK 架构概览
 
 > 简述：“AggLayer Chain Development Kit（Polygon CDK）是一个模块化、多栈的工具包，旨在帮助快速构建以太坊兼容的 L2 链。CDK 支持多种执行栈（如 cdk-opgeth、cdk-erigon）与安全模式（Sovereign、Validium、zkRollup），并与 AggLayer 原生对接以提供统一的跨链互操作语义与共享流动性。具体的可用功能（如数据可用性方案、证明策略）取决于所选的执行栈与部署模式。”

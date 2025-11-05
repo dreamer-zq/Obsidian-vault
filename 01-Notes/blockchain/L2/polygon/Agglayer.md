@@ -1,7 +1,3 @@
----
-study_status: "学习中"
----
-
 # Polygon AggLayer 架构概览
 
 > 简述：AggLayer 是 Polygon 生态的聚合互操作层，面向由 Polygon CDK 构建的多条 L2（以及后续的多栈与非 EVM 系统），提供统一的跨链安全语义与通用桥接，目标实现像单链一样顺畅的跨链体验。
@@ -77,7 +73,7 @@ flowchart TD
     - 跨链验证（Aggchain Proof & Pessimistic Proof）：验证跨链操作（资产/消息）的有效性与原子性。
   - 特性：端到端安全（需链内与跨链两类证明均通过）、原子跨链执行、模块化可扩展（可集成新的证明机制如乐观/欺诈等）。
 
-> 参考：Agglayer Docs — Architecture（High-Level Architecture）: <https://docs.agglayer.dev/agglayer/core-concepts/architecture/#high-level-architecture>
+> 参考：Agglayer Docs — [Architecture（High-Level Architecture）](https://docs.agglayer.dev/agglayer/core-concepts/architecture/#high-level-architecture)
 
 ## 3. 关键流程（示例）
 
