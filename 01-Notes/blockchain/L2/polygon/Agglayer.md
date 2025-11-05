@@ -5,7 +5,12 @@ study_status: "学习中"
 # Polygon AggLayer 架构概览
 
 > 简述：AggLayer 是 Polygon 生态的聚合互操作层，面向由 Polygon CDK 构建的多条 L2（以及后续的多栈与非 EVM 系统），提供统一的跨链安全语义与通用桥接，目标实现像单链一样顺畅的跨链体验。
-> 术语索引：参见 [Glossary](Glossary.md)。
+> 模块化专题文档：
+>
+> - [Unified Bridge（统一桥）](./Agglayer-UnifiedBridge.md)
+> - [Pessimistic Proof（悲观证明）](./Agglayer-PessimisticProof.md)
+> - [State Transition Proof（状态转换证明）](./Agglayer-StateTransitionProof.md)
+> - [AggKit（连接工具集）](./Agglayer-AggKit.md)
 
 ## 1. 架构概览
 
@@ -17,7 +22,7 @@ study_status: "学习中"
 - 架构要点：
   - L1 合约端的聚合与验证：在以太坊等结算层上验证来自多链的证明与跨链消息。
   - 链端适配与标准化数据结构：使用标准的本地退出树（Local Exit Tree）与全局根（Global Exit Root / Interop Root）表达跨链消息与资产状态。
-  - 通用桥接：在互操作层提供“公共桥（Common Bridge）”，统一本地/跨链资产的铸造、销毁与移动流程。
+  - 统一桥接：在互操作层提供“统一桥（Unified Bridge）”，统一本地/跨链资产的铸造、销毁与移动流程，并作为统一的消息通道与路由入口。
 
 ```mermaid
 flowchart TD
@@ -32,46 +37,47 @@ flowchart TD
     end
 
     subgraph "AggLayer (L1)"
-        L1[Authenticator / Verifier]
-        L2[Aggregator]
-        L3[Common Bridge & Message Bus]
+        L1[Agglayer Node]
+        L2[Unified Bridge]
+        L3[Global Exit Root]
     end
 
-    A2 --> L2
-    B2 --> L2
-    A3 --> L1
-    B3 --> L1
-    L2 --> L1
-    L1 --> L3
-    L3 --> B1
-    L3 --> A1
+    %% 链侧证明与适配上报
+    A2 --> L1
+    B2 --> L1
+    A3 --> L2
+    B3 --> L2
+
+    %% Agglayer 节点与统一桥协同维护全局根与最终性
+    L1 --> L2
+    L2 --> L3
+
+    %% 统一桥在最终确认后驱动目的链处理
+    L2 --> B1
+    L2 --> A1
 ```
 
 ## 2. 核心组件与职责
 
-- Authenticator（认证器/验证器）
-  - 职责：验证链端提交的“悲观证明（Pessimistic Proof）”或其他互操作安全证明，判定跨链消息是否可接受。
-  - 作用：为 AggLayer 判断消息的安全性边界，确保跨链调用与资产移动不会破坏整体安全。
+- Agglayer Node（节点服务）
+  - 职责：接收并验证连接链提交的零知识证明（ZK proofs），在验证后向 L1 提交所需信息；管理状态过渡相关的证书与 epoch 编排。
+  - 特性：Rust 实现的服务，负责跨链证明处理的核心逻辑与时序管理。
 
-- Aggregator（证明聚合器）
-  - 职责：聚合多条链提交的 ZK 证明，生成可统一验证的聚合证明，降低整体验证成本。
-  - 作用：摊平 L1 上的验证费用，提升多链互操作的吞吐。
+- Pessimistic Proof（悲观证明）
+  - 职责：确保任意提现请求均由统一桥（Unified Bridge）中的合法存款支撑；提供跨链安全验证与全局一致性视图，防止超额提现与欺诈。
+  - 技术：采用 Rust 实现的零知识证明机制，基于 SP1 zkVM 与 Plonky3 证明系统。
 
-- Common Bridge（通用桥）与 Message Bus（消息总线）
-  - 职责：提供跨链资产的标准桥接接口与消息传递通道，统一代币铸造/销毁与跨链调用流程。
-  - 作用：避免多桥并存的资产碎片化，提升用户体验与安全一致性。
+- Unified Bridge（统一桥）
+  - 职责：维护跨链资产与消息的会计与数据结构（含 Global Exit Root），确保跨链交易在 L1 完成最终确认后方可在目的链领取与处理；支持资产跨链与消息传递。
+  - 机制：维护可验证的 Merkle 证明链，保证目的链处理前已满足最终性约束。
 
-- AggSender / 链端适配器（Connector）
-  - 职责：在各条 CDK 链上采集与整理需要跨链的事件/更新，将其以标准格式上报 AggLayer。
-  - 作用：实现与 AggLayer 的数据结构与消息格式兼容（如本地退出树 LxLy），兼顾非 EVM 系统的定制适配。
+- State Transition Proof（状态转换证明）
+  - 职责：提供“两层验证”模型：
+    - 链内有效性证明（Validity Proof）：验证本地链的内部状态转换正确性与一致性。
+    - 跨链验证（Aggchain Proof & Pessimistic Proof）：验证跨链操作（资产/消息）的有效性与原子性。
+  - 特性：端到端安全（需链内与跨链两类证明均通过）、原子跨链执行、模块化可扩展（可集成新的证明机制如乐观/欺诈等）。
 
-- 数据结构：Local Exit Tree / Global Exit Root（或 Interop Root）
-  - 职责：表达链端待处理的退出/跨链消息集合及其全局可验证根。
-  - 作用：为跨链验证提供可组合、可证明的结构化依据。
-
-- L1 合约与系统组件
-  - 职责：在以太坊等结算层验证证明、维护状态根与全局互操作信息，并驱动跨链资产与消息的最终处理。
-  - 作用：提供强安全的最终性保障与可审计的互操作记录。
+> 参考：Agglayer Docs — Architecture（High-Level Architecture）: <https://docs.agglayer.dev/agglayer/core-concepts/architecture/#high-level-architecture>
 
 ## 3. 关键流程（示例）
 
@@ -79,8 +85,8 @@ flowchart TD
 
 1. 用户在链 A 发起转移（锁定/销毁链 A 资产）。
 2. 链端适配器将该跨链事件写入本地退出树并上报 AggLayer。
-3. Prover 生成链 A 批次证明，Aggregator 聚合为共享验证的证明。
-4. AggLayer 在 L1 验证通过后，Common Bridge 在链 B 铸造对应资产或完成记账调整。
+3. Prover 生成链 A 批次证明，Agglayer Node 验证并推进全局根（Global Exit Root）。
+4. 在 L1 最终确认后，Unified Bridge 在链 B 铸造对应资产或完成记账调整。
 5. 用户在链 B 获得资产，完成跨链转移。
 
 ```mermaid
@@ -89,15 +95,15 @@ sequenceDiagram
     participant SA as AggSender@链A
     participant PR as Prover@链A
     participant AL as AggLayer@L1
-    participant CB as CommonBridge@链B
+    participant BR as UnifiedBridge@链B
     participant UB as 用户@链B
 
     UA->>SA: 发起跨链转移
     SA->>AL: 提交 Local Exit Tree 更新
     PR->>AL: 提交 ZK 证明
-    AL->>AL: Authenticator 验证 + Aggregator 聚合
-    AL->>CB: 下发跨链转移指令
-    CB->>UB: 铸造/释放资产
+    AL->>AL: Agglayer Node 验证并推进 Global Exit Root
+    AL->>BR: 下发跨链转移指令
+    BR->>UB: 铸造/释放资产
 ```
 
 ### 3.2 跨链合约调用（安全互操作）
@@ -120,6 +126,5 @@ sequenceDiagram
 
 ## 6. 参考资料
 
-- Polygon Docs — AggLayer Overview: <https://docs.polygon.technology/learn/agglayer/overview/>
-- Polygon Technology — AggLayer: <https://polygon.technology/agglayer>
+- Polygon Docs — AggLayer Overview: <https://docs.agglayer.dev/agglayer/core-concepts/architecture/#overview>
 - Polygon Blog — AggLayer 标签页: <https://polygon.technology/blog-tags/agglayer>

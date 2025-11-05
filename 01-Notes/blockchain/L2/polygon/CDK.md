@@ -13,7 +13,8 @@ study_status: "学习中"
   - 模块化与可定制：按场景选择执行、证明、数据可用性与结算等组件。
   - EVM 兼容：沿用以太坊工具链（钱包、RPC、SDK），降低迁移成本。
   - 安全与扩展：通过 ZK 证明继承以太坊安全，支持外部 DA 与多栈互操作。
-  - 原生`AggLayer`连接：Sovereign 模式通常不依赖 ZK prover 作为互操作安全的主要机制，而是通过与 AggLayer 的原生连接、链端提交与 AggLayer 的验证/路由机制（即文中所称的‘悲观证明’或 challenge/验证机制）来保障跨链交互的安全性。注意：sequencer/排序器仍负责打包与提交批次；当需要更强的加密保障时，可选择结合 ZK 证明或外部 DA。若要深入理解‘悲观证明’，请参见 Glossary 中关于该术语的详细说明与参考链接。
+  - 原生`AggLayer`连接：Sovereign 模式通常不依赖 ZK prover 作为互操作安全的主要机制，而是通过与 AggLayer 的原生连接、链端提交与 AggLayer 的验证/路由机制（即文中所称的‘悲观证明’或 challenge/验证机制）来保障跨链交互的安全性。
+  **注意**：sequencer/排序器仍负责打包与提交批次；当需要更强的加密保障时，可选择结合 ZK 证明或外部 DA。若要深入理解‘悲观证明’，请参见 Glossary 中关于该术语的详细说明与参考链接。
 
 - 执行栈（Stacks）：
   - cdk-opgeth：OP Stack 风格，基于 Geth，原生`AggLayer`连接，适合快速上线与以太坊原生工具链；由 Conduit 维护 G2 排序器。
