@@ -22,8 +22,8 @@ study_status: "学习中"
 ## 3. 架构与组件
 
 - Aggchain Proof：
-  - 定义：一种灵活的跨链验证系统，可支持 ECDSA 签名或有效性证明，并结合统一桥约束进行验证。
-  - 作用：确保桥操作的合法性与约束满足（额度、最终性、原子性）。
+  - 定义：是 Agglayer 中一个灵活的验证系统，支持多种共识机制来证明链的状态转换。它作为一个通用适配器，可以与各种类型的链配合使用，无论这些链使用简单的基于签名的验证，还是更复杂的证明系统。
+  - 作用：将不同证明类型与桥梁验证相结合的能力，确保链的内部操作和跨链传输都是安全的。。
 - Pessimistic Proof：
   - 定义：防止受损链超额提取，限制风险至该链存款范围内。
   - 作用：作为跨链验证的安全边界，与 Aggchain Proof 共同形成跨链侧的完整验证。
@@ -104,6 +104,9 @@ sequenceDiagram
     PV->>AN: Provide validity proof (internal)
     AN->>AP: Validate cross-chain call constraints
     AN->>PP: Enforce pessimistic limits
+    AP->>UB: Pass cross-chain checks
+    PP->>UB: Pass safety boundary checks
+    %% Ensure UB dispatch happens after both AP and PP pass (English comments)
     UB->>CB: Dispatch call on destination chain
 ```
 

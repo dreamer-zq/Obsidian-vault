@@ -14,6 +14,8 @@ study_status: "学习中"
 - 强化安全：v0.3.5 引入多方委员会系统，消除单地址风险，适配高价值与企业级部署。
 - 标准化接入：提供规范化的“连接流程”，便于重复实施与维护。
 
+![alt text](https://docs.agglayer.dev/img/agglayer/agglayer-v1.png)
+
 ## 2. 架构与通信模式
 
 - 双向通信：
@@ -24,33 +26,43 @@ study_status: "学习中"
   - 桥接路由：与 Unified Bridge 协同执行跨链资产与消息的标准流程。
 
 ```mermaid
-flowchart TD
-    subgraph "Chain"
-        C1[Sequencer]
-        C2[AggKit Components]
-        C3[Adapter/Connector]
+graph LR
+    subgraph "Your L2 Chain"
+        L2[Your Chain]
+        Events[Bridge Events]
     end
-
-    subgraph "AggLayer (L1)"
-        A1[Agglayer Node]
-        A2[Unified Bridge]
-        A3[Global Exit Root]
+    
+    subgraph "AggKit Communication"
+        Voice[AggSender Outbound]
+        Ears[AggOracle Inbound]
     end
-
-    %% Bidirectional sync (English comments)
-    C2 --> A1
-    C3 --> A2
-    A2 --> C3
-    A1 --> A2
-    A2 --> A3
+    
+    subgraph "Agglayer Ecosystem"
+        AL[Agglayer]
+        ETH[Ethereum]
+        Global[Global State]
+    end
+    
+    Events --> Voice
+    Voice --> AL
+    AL --> ETH
+    ETH --> Global
+    Global --> Ears
+    Ears --> L2
+    
+    style Voice fill:#e8f5e8
+    style Ears fill:#e3f2fd
+    style AL fill:#f3e5f5
 ```
 
-## 3. 组件（示意）
+## 3. 组件
 
-- 同步组件：负责将本地事件（退出树更新、消息）规范化并提交至 Agglayer。
-- 证明组件：对接 Prover，出具或转发状态转换证明，参与全局根推进。
-- 桥接组件：与统一桥交互，实现资产与消息跨链的标准接口与安全约束。
-- 运营工具：提供 API 与服务封装，便于应用或上层服务集成。
+- AggSender（链端出站）：封装桥接事件与状态更新为签名证书并提交 Agglayer，是链参与 Agglayer 安全与协调的必备通道，确保跨链操作具备可验证的链端来源与合规性。
+- AggOracle（链端入站）：从 Agglayer 拉取全局状态（Global Exit Root）更新，支持 v0.3.5 的“委员会式共识”校验，供目的链验证入站桥交易与结算信息，避免单地址风险、提升生产安全性。
+- L1InfoTreeSync（L1 情报同步）：持续监控以太坊 L1，维护用于生成/验证跨链与状态证明的 L1 数据结构（如 Merkle/信息树），为 AggSender 证书与证明生成提供可引用的基础数据。
+- BridgeSync（桥接状态同步）：对接统一桥（Unified Bridge）与相关流程，协调跨链资产与消息的标准路由，保证在 L1 结算后铸造/消息调用按序落地，维持跨链会计一致性。
+- L2GERSync（全局退出根同步）：跟踪本链退出树与全局退出根（GER）的更新，确保本链退出信息可被他链验证，并与 Agglayer 的全局根推进逻辑保持一致。
+- AggchainProofGen（证明生成）：与 Prover 协作产出链批次的 ZK 证明及必要的悲观证明（Pessimistic Proof）工件，推动全局状态前进、为跨链操作提供安全保障。
 
 ## 4. v0.3.5 安全改进：多方委员会系统
 
@@ -73,7 +85,7 @@ sequenceDiagram
     AN->>UB: Verify and advance Global Exit Root
 ```
 
-## 5. 集成流程（示例）
+## 5. 集成流程
 
 1. 部署 AggKit 组件，配置与链端适配器的接口。
 2. 启用多方委员会（可选，建议生产），配置门槛与成员列表。
