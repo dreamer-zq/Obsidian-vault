@@ -10,5 +10,9 @@
   },
   "propertiesInDocument": "hidden",
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "/assets/images/"
+  "attachmentFolderPath": "/assets/images/",
+  "userIgnoreFilters": [
+    "docs/",
+    "scripts/"
+  ]
 }
