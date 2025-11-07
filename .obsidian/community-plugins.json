@@ -14,5 +14,6 @@
   "templater-obsidian",
   "homepage",
   "mehrmaid",
-  "obsidian-git"
+  "obsidian-git",
+  "notebook-navigator"
 ]
