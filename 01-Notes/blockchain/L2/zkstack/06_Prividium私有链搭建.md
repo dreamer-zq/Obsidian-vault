@@ -1,4 +1,4 @@
-# 05 ZKsync Prividium 链部署文档
+# ZKsync Prividium 链部署文档
 
 本文档将指导您使用 ZKsync Stack CLI 在本地运行 ZKsync Prividium 链。通过本指南，您将能够：
 

@@ -2,7 +2,7 @@
 study_status: "学习中"
 ---
 
-# Pessimistic Proof
+# Agglayer Pessimistic Proof
 
 > 简述：Pessimistic Proof 是 Agglayer 的高级安全机制，用于在连接链出现问题时，将影响范围限制在该链的存款规模之内，构建跨链互操作的“防火墙”，保护整个平台的资金安全。
 > 术语索引：参见 [Glossary](Glossary.md)。

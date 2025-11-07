@@ -2,7 +2,7 @@
 study_status: "学习中"
 ---
 
-# AggKit
+# Agglayer AggKit
 
 > 简述：AggKit 是连接各条链至统一 Agglayer 生态的同步工具集，提供模块化组件以实现跨链通信、证明提交与会计同步，同时在 v0.3.5 引入“多方委员会系统”增强生产级安全性。
 > 术语索引：参见 [Glossary](Glossary.md)。

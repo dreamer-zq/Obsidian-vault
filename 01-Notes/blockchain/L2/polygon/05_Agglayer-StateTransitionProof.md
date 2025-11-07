@@ -2,7 +2,7 @@
 study_status: "学习中"
 ---
 
-# State Transition Proof
+# Agglayer State Transition Proof
 
 > 简述：State Transition Proof（STP）是 Agglayer v0.3 引入的“全面信任验证”机制，通过双重验证体系同时保障“链内状态转换正确性”和“跨链桥操作的安全与原子性”。
 > 术语索引：参见 [Glossary](Glossary.md)。
