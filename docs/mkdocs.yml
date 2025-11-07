@@ -29,6 +29,7 @@ theme:
         name: Switch to light mode
 plugins:
   - search
+  - typeset
 markdown_extensions:
   - toc:
       permalink: true
