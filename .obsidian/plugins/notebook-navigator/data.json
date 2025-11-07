@@ -1,12 +1,16 @@
 {
   "fileVisibility": "supported",
-  "excludedFolders": [],
+  "excludedFolders": [
+    "assets",
+    "docs",
+    "scripts"
+  ],
   "excludedFiles": [],
   "autoRevealActiveFile": true,
   "autoRevealIgnoreRightSidebar": true,
   "multiSelectModifier": "cmdCtrl",
-  "startView": "files",
-  "homepage": null,
+  "startView": "navigation",
+  "homepage": "Home.md",
   "mobileHomepage": null,
   "useMobileHomepage": false,
   "showTooltips": false,
@@ -20,7 +24,7 @@
   "skipAutoScroll": false,
   "navigationBanner": null,
   "showSectionIcons": true,
-  "showShortcuts": true,
+  "showShortcuts": false,
   "showRecentNotes": true,
   "recentNotesCount": 5,
   "collapseBehavior": "all",
@@ -35,7 +39,7 @@
   "autoSelectFirstFileOnFocusChange": false,
   "autoExpandFoldersTags": false,
   "showFolderIcons": true,
-  "showRootFolder": true,
+  "showRootFolder": false,
   "inheritFolderColors": false,
   "enableFolderNotes": false,
   "folderNoteType": "markdown",
@@ -94,7 +98,9 @@
   ],
   "forceSquareFeatureImage": true,
   "useEmbeddedImageFallback": true,
-  "externalIconProviders": {},
+  "externalIconProviders": {
+    "material-icons": true
+  },
   "searchProvider": "internal",
   "keyboardShortcuts": {
     "pane:move-up": [
@@ -259,7 +265,11 @@
   "folderColors": {},
   "folderBackgroundColors": {},
   "folderSortOverrides": {},
-  "folderAppearances": {},
+  "folderAppearances": {
+    "01-Notes/blockchain/L2/polygon": {
+      "groupBy": "folder"
+    }
+  },
   "tagIcons": {},
   "tagColors": {},
   "tagBackgroundColors": {},
