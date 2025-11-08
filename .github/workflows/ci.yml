@@ -1,54 +1,28 @@
-name: ci 
+name: Documentation
 on:
   push:
     branches:
-      - master 
+      - master
       - main
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Configure Git Credentials
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+      - uses: actions/configure-pages@v5
+      - uses: actions/checkout@v5
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
-      - uses: actions/cache@v4
+      - run: pip install zensical
+      - run: zensical build --clean 
+      - uses: actions/upload-pages-artifact@v4
         with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: ~/.cache 
-          restore-keys: |
-            mkdocs-material-
-      - run: pip install mkdocs-material mkdocs-mermaid2-plugin mdx_truly_sane_lists
-      - name: Clean local site output
-        run: |
-          python scripts/clean_site.py
-      - name: Prepare docs content
-        shell: bash
-        run: |
-          set -euo pipefail
-          echo "Preparing content for MkDocs build..."
-          mkdir -p docs
-          # Copy selected top-level directories into docs so MkDocs can serve them
-          # NOTE: 00-Index in your note likely refers to 00-Inbox in this repo
-          if [ -d 00-Inbox ]; then
-            cp -a 00-Inbox docs/00-Inbox
-          fi
-          if [ -d 01-Notes ]; then
-            cp -a 01-Notes docs/01-Notes
-          fi
-          # Optional: include other sections that are referenced from the homepage
-          if [ -d 02-Projects ]; then
-            cp -a 02-Projects docs/02-Projects
-          fi
-          if [ -d assets ]; then
-            cp -a assets docs/assets
-          fi
-          echo "Content prepared under ./docs"
-      - run: mkdocs gh-deploy --force -f docs/mkdocs.yml
+          path: site
+      - uses: actions/deploy-pages@v4
