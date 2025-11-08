@@ -31,8 +31,6 @@ next = "fontawesome/solid/angle-right"
 [project.markdown_extensions.footnotes]
 [project.markdown_extensions.tables]
 [project.markdown_extensions.superfences]
-[project.markdown_extensions.tabbed]
-alternate_style = true
 
 [project.markdown_extensions.pymdownx.highlight]
 anchor_linenums = true
