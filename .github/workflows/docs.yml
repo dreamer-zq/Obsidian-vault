@@ -14,6 +14,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/configure-pages@v5
+      - uses: actions/checkout@v5
       - name: Run prepare docs content
         shell: bash
         run: |
@@ -29,12 +31,13 @@ jobs:
           if [ -d 02-Projects ]; then
             cp -a 02-Projects docs/02-Projects
           fi
+          if [ -d 03-Resources ]; then
+            cp -a 03-Resources docs/03-Resources
+          fi
           if [ -d assets ]; then
             cp -a assets docs/assets
           fi
           echo "Content prepared under ./docs"
-      - uses: actions/configure-pages@v5
-      - uses: actions/checkout@v5
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
