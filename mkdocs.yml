@@ -1,31 +1,45 @@
 site_name: Dreamer's Note
 docs_dir: docs
 site_dir: site
+
 theme:
   name: material
   features:
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
+    - navigation.tracking
     - navigation.expand
     - navigation.path
     - header.autohide
     - navigation.footer
   palette:
-    # Palette toggle for light mode
-    - scheme: default
-      primary: white
-      accent: purple
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/eye
-        name: Switch to dark mode
-    # Palette toggle for dark mode
-    - scheme: slate
-      primary: black
-      accent: purple
-      toggle:
-        icon: material/eye-outline
+        icon: material/link
         name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
 plugins:
   - search
 markdown_extensions:
@@ -73,3 +87,6 @@ markdown_extensions:
           case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji  
