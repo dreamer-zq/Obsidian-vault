@@ -1,6 +1,9 @@
 [project]
 site_name = "Dreamer's Note"
 
+[project.paths]
+docs_dir = "docs"
+site_dir = "site"
 
 [project.theme]
 features = [
@@ -11,7 +14,7 @@ features = [
     "content.code.annotate"
 ]
 
-[[project.theme.palette]] 
+[[project.theme.palette]]
 scheme = "default"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
@@ -26,19 +29,18 @@ previous = "fontawesome/solid/angle-left"
 next = "fontawesome/solid/angle-right"
 
 [project.markdown_extensions.admonition]
-[project.markdown_extensions.pymdownx.details]
-[project.markdown_extensions.pymdownx.superfences]
 [project.markdown_extensions.footnotes]
 [project.markdown_extensions.tables]
-[project.markdown_extensions.superfences]
 
+[project.markdown_extensions.pymdownx.details]
 [project.markdown_extensions.pymdownx.highlight]
 anchor_linenums = true
 line_spans = "__span"
 pygments_lang_class = true
 [project.markdown_extensions.pymdownx.inlinehilite]
 [project.markdown_extensions.pymdownx.snippets]
-[project.markdown_extensions.pymdownx.superfences.custom_fences]
+[project.markdown_extensions.pymdownx.superfences]
+[[project.markdown_extensions.pymdownx.superfences.custom_fences]]
 name = "mermaid"
 class = "mermaid"
 format = "pymdownx.superfences.fence_code_format"

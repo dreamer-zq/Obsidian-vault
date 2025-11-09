@@ -18,17 +18,14 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          echo "Preparing content for MkDocs build..."
+          echo "Preparing content for Zensical build..."
           mkdir -p docs
-          # Copy selected top-level directories into docs so MkDocs can serve them
-          # NOTE: 00-Index in your note likely refers to 00-Inbox in this repo
           if [ -d 00-Inbox ]; then
             cp -a 00-Inbox docs/00-Inbox
           fi
           if [ -d 01-Notes ]; then
             cp -a 01-Notes docs/01-Notes
           fi
-          # Optional: include other sections that are referenced from the homepage
           if [ -d 02-Projects ]; then
             cp -a 02-Projects docs/02-Projects
           fi
@@ -47,3 +44,4 @@ jobs:
         with:
           path: site
       - uses: actions/deploy-pages@v4
+        id: deployment
