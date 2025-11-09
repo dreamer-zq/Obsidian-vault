@@ -14,7 +14,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Prepare docs content
+      - name: Run prepare docs content
         shell: bash
         run: |
           set -euo pipefail
