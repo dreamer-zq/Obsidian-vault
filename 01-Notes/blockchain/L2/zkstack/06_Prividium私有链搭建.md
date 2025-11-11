@@ -72,6 +72,7 @@ zkstack server
 ```
 
 启动后：
+
 - L1 链运行在端口 `8545`
 - Prividium 链数据库运行在端口 `5432`
 - Prividium 链节点运行在端口 `3050`
@@ -105,7 +106,7 @@ cd prividium-token
 
 使用富钱包的私钥：
 
-```
+```text
 ? Private key of the wallet responsible for deploying contracts (optional)
 0x7726827caac94a7f9e1b160f7ea819f172f7b6f9d2a97f992c38edeab82d4110
 ```
@@ -251,6 +252,7 @@ npx hardhat run ./scripts/priv-interact.ts
 在 `scripts` 文件夹中创建名为 `check-balance.ts` 的新文件，该脚本用于检查默认钱包的 ERC20 余额。
 
 要检查另一个地址的余额，您必须：
+
 1. 为该地址注册用户令牌
 2. 更新 `.env` 文件中的私钥
 3. 运行 `check-balance` 脚本
@@ -361,6 +363,7 @@ zkstack explorer run
 ### 端口占用
 
 如果遇到端口占用问题，请确保以下端口未被其他服务使用：
+
 - 3050, 3070, 4041, 5432, 8545
 
 ### 权限配置错误
@@ -374,6 +377,7 @@ zkstack explorer run
 ### 访问被拒绝
 
 如果收到 `Unauthorized` 错误，请检查：
+
 1. 用户令牌是否有效
 2. 权限配置文件中是否正确配置了访问规则
 3. 是否使用了正确的钱包地址

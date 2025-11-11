@@ -30,7 +30,7 @@
   "collapseBehavior": "all",
   "smartCollapse": true,
   "colorIconOnly": false,
-  "showNoteCount": true,
+  "showNoteCount": false,
   "separateNoteCounts": true,
   "navIndent": 16,
   "navItemHeight": 28,

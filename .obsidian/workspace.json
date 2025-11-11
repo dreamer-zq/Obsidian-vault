@@ -35,23 +35,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "750fde33631bb4aa",
-            "type": "leaf",
-            "state": {
-              "type": "notebook-navigator",
-              "state": {},
-              "icon": "notebook",
-              "title": "笔记本导航器"
-            }
-          },
-          {
             "id": "56883cb21f2a4517",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -83,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#rollup",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -235,13 +225,13 @@
       "obsidian-git:Open Git source control": false,
       "meld-encrypt:Lock and Close all open encrypted notes": true,
       "meld-encrypt:Encrypt Selection": true,
-      "meld-encrypt:Decrypt at Cursor": true,
-      "notebook-navigator:笔记本导航器": false
+      "meld-encrypt:Decrypt at Cursor": true
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "56883cb21f2a4517",
   "lastOpenFiles": [
     "Home.md",
+    "未命名.md",
     "01-Notes/blockchain/L2/polygon/Agglayer-UnifiedBridge.md",
     "01-Notes/blockchain/L2/polygon/Agglayer.md",
     "02-Projects/hashkey/L2 验证网络分析与设计.md",
@@ -269,7 +259,6 @@
     "01-Notes/区块链/二层网络/zkstack/03_核心组件.md",
     "01-Notes/区块链/二层网络/zkstack/02_核心模块分析.md",
     "未命名.base",
-    "未命名.md",
     "02-Projects/nesa",
     "02-Projects/cosmos",
     "02-Projects/hashkey",
