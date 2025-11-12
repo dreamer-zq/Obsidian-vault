@@ -1,7 +1,3 @@
----
-study_status: "学习中"
----
-
 # Agglayer Unified Bridge
 
 > 简述：Unified Bridge 是 Agglayer 的核心互操作层，为所有连接链提供统一的跨链接口（L1↔L2、L2↔L1、L2↔L2），在以太坊结算层上完成最终确认，确保跨链资产转移与消息调用的安全与一致性。

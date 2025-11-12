@@ -1,7 +1,3 @@
----
-study_status: "学习中"
----
-
 # Polygon 术语表（Glossary）
 
 > 说明：本术语表汇总并统一解释在《CDK.md》与《AggLayer.md》中出现但不属于正文展开的相关概念，便于跨文档查阅与保持术语一致性。
