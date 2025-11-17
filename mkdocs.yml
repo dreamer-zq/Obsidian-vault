@@ -21,7 +21,7 @@ theme:
     - header.autohide
         # 右侧目录(TOC)
     - toc.follow             # 目录跟随滚动
-    - toc.integrate          # 将TOC集成到左侧导航(隐藏右侧)
+    # - toc.integrate          # 将TOC集成到左侧导航(隐藏右侧)
     - search.suggest         # 搜索建议
     - search.highlight       # 搜索高亮
   palette:
