@@ -1,12 +1,6 @@
 /* 默认状态保持原样 */
 
-/* 阅读模式激活时 */
-body.reading-mode {
-    overflow-x: hidden;
-    /* 防止缩放后出现横向滚动条 */
-}
-
-/* 隐藏导航元素 */
+/* 阅读模式激活时的样式 */
 body.reading-mode .md-header,
 body.reading-mode .md-sidebar--primary,
 body.reading-mode .md-sidebar--secondary,
@@ -17,128 +11,19 @@ body.reading-mode .md-tabs {
     transition: opacity 0.3s ease;
 }
 
-/* 内容区域布局调整 */
 body.reading-mode .md-content {
     margin: 0 auto !important;
     max-width: 100% !important;
     transition: all 0.3s ease;
 }
 
-/* 核心：整体缩放内容区域 */
 body.reading-mode .md-content__inner {
-    /* 整体放大 1.2 倍 (可调整为 1.15, 1.25, 1.3 等) */
-    transform: scale(1.2);
-    transform-origin: top center;
-    /* 从顶部中心开始缩放 */
-
-    /* 调整宽度以适应缩放后的尺寸 */
-    max-width: calc(750px / 1.2);
-    /* 反向计算，确保缩放后宽度合适 */
+    max-width: 750px;
     margin: 0 auto;
     padding: 3rem 2rem;
-
-    /* 添加额外的底部空间，避免内容被切掉 */
-    padding-bottom: 6rem;
-
-    /* 平滑过渡 */
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-        max-width 0.4s ease,
-        padding 0.4s ease;
 }
 
-/* 调整主容器高度以适应缩放 */
-body.reading-mode .md-main {
-    /* 根据缩放比例调整最小高度 */
-    min-height: calc(100vh * 1.2);
-}
-
-/* 确保切换按钮始终可见且不被缩放影响 */
-body.reading-mode button[style*="fixed"] {
-    transform: none !important;
-    /* 按钮不参与整体缩放 */
-}
-
-/* ============================================
-   响应式调整
-   ============================================ */
-
-/* 大屏幕 - 更大的缩放比例 */
-@media screen and (min-width: 1400px) {
-    body.reading-mode .md-content__inner {
-        transform: scale(1.25);
-        max-width: calc(800px / 1.25);
-    }
-
-    body.reading-mode .md-main {
-        min-height: calc(100vh * 1.25);
-    }
-}
-
-/* 中等屏幕 */
-@media screen and (min-width: 960px) and (max-width: 1399px) {
-    body.reading-mode .md-content__inner {
-        transform: scale(1.2);
-        max-width: calc(750px / 1.2);
-    }
-}
-
-/* 小屏幕 - 适度缩放 */
-@media screen and (max-width: 959px) {
-    body.reading-mode .md-content__inner {
-        transform: scale(1.15);
-        max-width: calc(100% / 1.15);
-        padding: 2rem 1.5rem;
-    }
-
-    body.reading-mode .md-main {
-        min-height: calc(100vh * 1.15);
-    }
-}
-
-/* 移动设备 - 轻微缩放 */
-@media screen and (max-width: 600px) {
-    body.reading-mode .md-content__inner {
-        transform: scale(1.1);
-        max-width: calc(100% / 1.1);
-        padding: 1.5rem 1rem;
-    }
-
-    body.reading-mode .md-main {
-        min-height: calc(100vh * 1.1);
-    }
-}
-
-/* ============================================
-   代码块和特殊元素优化
-   ============================================ */
-
-/* 确保代码块在缩放后不溢出 */
-body.reading-mode .md-typeset pre {
-    max-width: 100%;
-    overflow-x: auto;
-}
-
-/* 确保表格响应式 */
-body.reading-mode .md-typeset table {
-    display: block;
-    max-width: 100%;
-    overflow-x: auto;
-}
-
-/* 确保 Mermaid 图表适应容器 */
-body.reading-mode .mermaid {
-    max-width: 100%;
-    overflow-x: auto;
-}
-
-body.reading-mode .mermaid svg {
-    max-width: 100%;
-    height: auto;
-}
-
-/* ============================================
-   打印样式
-   ============================================ */
+/* 优化打印样式 */
 @media print {
 
     .md-header,
@@ -147,35 +32,4 @@ body.reading-mode .mermaid svg {
     button {
         display: none !important;
     }
-
-    .md-content__inner {
-        transform: none !important;
-        /* 打印时不缩放 */
-        max-width: 100% !important;
-    }
-}
-
-/* ============================================
-   可选：添加轻微的视觉提示
-   ============================================ */
-
-/* 阅读模式下添加微妙的背景色变化 */
-body.reading-mode {
-    background: #fafafa;
-}
-
-[data-md-color-scheme="slate"] body.reading-mode {
-    background: #1a1a1a;
-}
-
-/* 内容区域添加轻微阴影，增强层次感 */
-body.reading-mode .md-content__inner {
-    background: white;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
-}
-
-[data-md-color-scheme="slate"] body.reading-mode .md-content__inner {
-    background: #2d2d2d;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
 }
