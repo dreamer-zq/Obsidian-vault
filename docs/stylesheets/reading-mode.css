@@ -1,0 +1,35 @@
+/* 默认状态保持原样 */
+
+/* 阅读模式激活时的样式 */
+body.reading-mode .md-header,
+body.reading-mode .md-sidebar--primary,
+body.reading-mode .md-sidebar--secondary,
+body.reading-mode .md-footer,
+body.reading-mode .md-tabs {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: opacity 0.3s ease;
+}
+
+body.reading-mode .md-content {
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    transition: all 0.3s ease;
+}
+
+body.reading-mode .md-content__inner {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* 优化打印样式 */
+@media print {
+
+    .md-header,
+    .md-sidebar,
+    .md-footer,
+    button {
+        display: none !important;
+    }
+}

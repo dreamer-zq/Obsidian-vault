@@ -96,3 +96,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
       emoji_index: !!python/name:material.extensions.emoji.twemoji  
+
+extra_javascript:
+  - javascripts/reading-mode.js
+
+extra_css:
+  - stylesheets/reading-mode.css
