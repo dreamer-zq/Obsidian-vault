@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "01_总体架构",
+      "path": "01-Notes/blockchain/L2/zkstack/01_总体架构.md"
+    },
+    {
       "basename": "Home",
       "path": "Home.md"
     },
@@ -23,10 +27,6 @@
     {
       "basename": "Agglayer-AggKit",
       "path": "01-Notes/blockchain/L2/polygon/Agglayer-AggKit.md"
-    },
-    {
-      "basename": "01_总体架构",
-      "path": "01-Notes/blockchain/L2/zkstack/01_总体架构.md"
     },
     {
       "basename": "AggLayer",
