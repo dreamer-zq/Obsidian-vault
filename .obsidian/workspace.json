@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
+                "file": "Home.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_总体架构"
+              "title": "Home"
             }
           }
         ]
@@ -228,15 +228,15 @@
       "meld-encrypt:Decrypt at Cursor": true
     }
   },
-  "active": "56883cb21f2a4517",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
     "Home.md",
     "未命名.md",
     "01-Notes/blockchain/L2/polygon/Agglayer-UnifiedBridge.md",
     "01-Notes/blockchain/L2/polygon/Agglayer.md",
     "02-Projects/hashkey/L2 验证网络分析与设计.md",
     "01-Notes/blockchain/L2/polygon/Agglayer-AggKit.md",
-    "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
     "assets/images/Pasted image 20251103140535.png",
     "01-Notes/blockchain/L2/optimistic/Optimistic概述.md",
     "assets/images",
