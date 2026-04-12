@@ -1,8 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "Polygon_Agglayer_vs_ZK_Stack",
+      "path": "01-Notes/Syntheses/Polygon_Agglayer_vs_ZK_Stack.md"
+    },
+    {
+      "basename": "log",
+      "path": "00-Meta/log.md"
+    },
+    {
+      "basename": "LLM_SCHEMA",
+      "path": "00-Meta/LLM_SCHEMA.md"
+    },
+    {
+      "basename": "index",
+      "path": "00-Meta/index.md"
+    },
+    {
+      "basename": "index",
+      "path": "00-Inbox/index.md"
+    },
+    {
       "basename": "Home",
       "path": "Home.md"
+    },
+    {
+      "basename": "WIKI",
+      "path": "WIKI.md"
+    },
+    {
+      "basename": "万字干货：理解 Harness Engineering，看这一篇就够了",
+      "path": "Clippings/万字干货：理解 Harness Engineering，看这一篇就够了.md"
     },
     {
       "basename": "Superpowers",

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "01-Notes/Syntheses/Polygon_Agglayer_vs_ZK_Stack.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Polygon_Agglayer_vs_ZK_Stack"
             }
           }
         ]
@@ -228,10 +228,20 @@
       "meld-encrypt:Decrypt at Cursor": true
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "56883cb21f2a4517",
   "lastOpenFiles": [
-    "01-Notes/AI/agent/Superpowers.md",
+    "00-Meta/log.md",
+    "00-Meta/LLM_SCHEMA.md",
+    "00-Meta/index.md",
+    "00-Inbox/index.md",
     "Home.md",
+    "WIKI.md",
+    "Clippings/万字干货：理解 Harness Engineering，看这一篇就够了.md",
+    "00-Meta",
+    "WIKI.md.sb-0ba09424-qwEpfM",
+    "未命名.txt",
+    "Clippings",
+    "01-Notes/AI/agent/Superpowers.md",
     "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
     "未命名.md",
     "01-Notes/blockchain/L2/polygon/Agglayer-UnifiedBridge.md",
@@ -253,20 +263,10 @@
     "01-Notes/blockchain/L2/zkstack/03_核心组件.md",
     "01-Notes/blockchain/solana/03_区块构建.md",
     "01-Notes/区块链/二层网络/链下扩容深度总结.md",
-    "01-Notes/区块链/跨链/跨链桥.md",
     "03-Resources/软件.mdenc",
-    "01-Notes/区块链/二层网络/zkstack/05_Prividium私有链搭建.md",
-    "01-Notes/区块链/二层网络/zkstack/01_总体架构.md",
-    "01-Notes/区块链/二层网络/zkstack/03_核心组件.md",
-    "01-Notes/区块链/二层网络/zkstack/02_核心模块分析.md",
     "未命名.base",
     "02-Projects/nesa",
     "02-Projects/cosmos",
-    "02-Projects/hashkey",
-    "00-Inbox/临时笔记.md",
-    "未命名 1.base",
-    "未命名.canvas",
-    "Excalidraw",
-    "Templates"
+    "未命名.canvas"
   ]
 }
