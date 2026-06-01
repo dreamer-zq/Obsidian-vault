@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "01_总体架构",
+      "path": "01-Notes/blockchain/L2/zkstack/01_总体架构.md"
+    },
+    {
       "basename": "Home",
       "path": "Home.md"
     },
@@ -35,10 +39,6 @@
     {
       "basename": "Superpowers",
       "path": "01-Notes/AI/agent/Superpowers.md"
-    },
-    {
-      "basename": "01_总体架构",
-      "path": "01-Notes/blockchain/L2/zkstack/01_总体架构.md"
     },
     {
       "basename": "MCP",
