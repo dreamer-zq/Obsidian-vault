@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
+                "file": "Home.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_总体架构"
+              "title": "Home"
             }
           }
         ]
@@ -230,6 +230,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
     "Home.md",
     "WIKI.md",
     "01-Notes/Syntheses/Polygon_Agglayer_vs_ZK_Stack.md",
@@ -243,7 +244,6 @@
     "未命名.txt",
     "Clippings",
     "01-Notes/AI/agent/Superpowers.md",
-    "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
     "未命名.md",
     "01-Notes/blockchain/L2/polygon/Agglayer-UnifiedBridge.md",
     "01-Notes/blockchain/L2/polygon/Agglayer.md",
