@@ -200,8 +200,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 309.5,
-    "collapsed": true
+    "width": 309.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,8 +229,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
+    "01-Notes/blockchain/L2/zkstack/03_核心组件.md",
     "Home.md",
+    "01-Notes/blockchain/L2/zkstack/01_总体架构.md",
     "WIKI.md",
     "01-Notes/Syntheses/Polygon_Agglayer_vs_ZK_Stack.md",
     "00-Meta/log.md",
@@ -261,7 +261,6 @@
     "02-Projects/hashkey/HVN方案.md",
     "01-Notes/blockchain/L2/zkstack/06_Prividium私有链搭建.md",
     "01-Notes/blockchain/L2/zkstack/04_区块和交易.md",
-    "01-Notes/blockchain/L2/zkstack/03_核心组件.md",
     "01-Notes/blockchain/solana/03_区块构建.md",
     "03-Resources/软件.mdenc",
     "未命名.base",
