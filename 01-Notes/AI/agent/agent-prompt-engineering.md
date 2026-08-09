@@ -6,6 +6,7 @@ related_to:
   - "[[agent-planning]]"
   - "[[agent-context-engineering]]"
   - "[[agent-tool-use]]"
+_width: wide
 ---
 
 # Agent Prompt 工程

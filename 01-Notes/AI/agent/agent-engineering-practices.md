@@ -7,6 +7,7 @@ related_to:
   - "[[agent-memory]]"
   - "[[agent-tool-use]]"
   - "[[Superpowers]]"
+_width: wide
 ---
 
 # Agent 工程实践

@@ -5,6 +5,22 @@
       "path": "Home.md"
     },
     {
+      "basename": "agent-memory",
+      "path": "01-Notes/AI/agent/agent-memory.md"
+    },
+    {
+      "basename": "agent-prompt-engineering",
+      "path": "01-Notes/AI/agent/agent-prompt-engineering.md"
+    },
+    {
+      "basename": "agent-tool-use",
+      "path": "01-Notes/AI/agent/agent-tool-use.md"
+    },
+    {
+      "basename": "llm-agent-architecture",
+      "path": "01-Notes/AI/agent/llm-agent-architecture.md"
+    },
+    {
       "basename": "03_核心组件",
       "path": "01-Notes/blockchain/L2/zkstack/03_核心组件.md"
     },
